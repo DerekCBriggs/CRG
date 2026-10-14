@@ -1,31 +1,36 @@
-# CRG
+# CRG: Content-referenced growth prototype for fractions
 
-Prototypes for Reporting Content-Referenced Growth Visualizations.
+An interactive prototype that reports student and classroom growth against a
+learning progression for fractions, from CADRE at the University of Colorado
+Boulder.
 
-This fractions prototype explores student and classroom status and growth through a learning progression. It includes four student histories, three demonstration classrooms, concept descriptions, exemplar tasks, and follow-up activities.
+View it at https://derekcbriggs.github.io/CRG/
 
-## View the prototype
+## What it shows
 
-Once GitHub Pages is enabled: https://DerekCBriggs.github.io/CRG/
+| View | Contents |
+| --- | --- |
+| Class | Scores for a class against four fractions levels, movement between levels, and groups with instructional next steps |
+| Student | One student's scores over six occasions, a plain-language growth statement, chances of success on exemplar items, and a printable report |
+| Learning progression | The four levels with descriptions and exemplar items |
+| How levels are set | Item locations by level, with a draggable student score |
 
-To run offline, download this repository as a ZIP, extract it, and open `index.html` in a browser. No installation or build step is required.
+A guided tour ("Take the tour") walks through the main ideas.
 
-## Publish with GitHub Pages
+## Data
 
-In Settings → Pages, choose **Deploy from a branch**, select **main** and **/ (root)**, then Save. GitHub publishes the static files and updates the site after subsequent commits.
+All students and scores are hypothetical.
 
-## Data and interpretation
+## Running it
 
-The demonstration data reproduce the supplied local reporting prototype. Sandy's latest score is 511. The four named student histories and classroom initials are separate demonstration datasets.
+The site is static: HTML, CSS, JavaScript, and one data file. Open `index.html`
+in a browser, or serve the folder with any static web server.
 
-Reference scores are 419, 450, 467 and 498. Optional classroom uncertainty bars illustrate ±6 points; they are not student-specific confidence intervals. The Grade 4 reference band is 465–526. Reference locations support inquiry about student thinking, rather than definitive mastery classifications.
+## More about content-referenced growth
 
-Research: https://doi.org/10.1080/10627197.2025.2503288
+- CADRE: https://cadre-cu.github.io/crg.html
+- Briggs, D. C., et al. (2025). Visualizing and reporting content-referenced
+  growth on a learning progression. *Educational Assessment*.
+  https://doi.org/10.1080/10627197.2025.2503288
 
-## Files
-
-- `index.html`, `style.css`, `app.js`: interface and interactions.
-- `data.js`, `data.json`: demonstration data.
-- `assets/`: twenty teaching images.
-
-The site uses relative asset paths and has no server, database, external scripts, or remote fonts.
+An alternative version of this prototype is at https://derekcbriggs.github.io/CRGalt/

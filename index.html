@@ -1,6 +1,69 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fractions · Content-referenced growth</title><meta name="description" content="Explore student and classroom growth through the fractions learning progression."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b4856'/%3E%3Cpath d='M6 24L13 19L20 20L27 7' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"><script defer src="data.js"></script><script defer src="app.js"></script></head><body>
-<header><a class="brand" href="#student">CRG<span>Content-referenced growth</span></a><nav aria-label="Report views"><button data-view="student" aria-current="page">Student</button><button data-view="class">Classroom</button><button data-view="about">Learning progression</button></nav><span class="demo">Demonstration data</span></header>
-<main id="app"><p>Loading report…</p></main><footer><span>CADRE · University of Colorado Boulder</span><a href="https://doi.org/10.1080/10627197.2025.2503288" target="_blank" rel="noopener">Research behind this report ↗</a></footer>
-<dialog id="item-dialog" aria-labelledby="dialog-title"><button class="close" aria-label="Close item">×</button><div id="dialog-content"></div></dialog>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Understanding Fractions · Content-Referenced Growth</title>
+  <meta name="description" content="An interactive content-referenced growth report for the Understanding Fractions learning progression, from CADRE at the University of Colorado Boulder.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23000'/%3E%3Crect x='7' y='20' width='4' height='6' fill='%2386b6ef'/%3E%3Crect x='12.5' y='15' width='4' height='11' fill='%233987e5'/%3E%3Crect x='18' y='10' width='4' height='16' fill='%231c5cab'/%3E%3Crect x='23.5' y='5' width='4' height='21' fill='%23cfb87c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Non-blocking: text paints at once in fallback fonts if the font request is slow. -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="assets/css/app.css?v=10">
+</head>
+<body>
+  <div class="site-bar">
+    <div class="wrap">
+      <a class="brand" href="https://cadre-cu.github.io/"><b>CADRE</b> · University of Colorado Boulder</a>
+      <a class="right" href="https://cadre-cu.github.io/crg.html">About content-referenced growth ↗</a>
+    </div>
+  </div>
+
+  <header class="app-head">
+    <div class="wrap">
+      <div class="kicker">Content-Referenced Growth · Prototype</div>
+      <div class="title-row">
+        <h1>Understanding Fractions</h1>
+        <button id="tour-btn" class="btn btn-gold" type="button">Take the tour</button>
+      </div>
+      <nav class="tabs" aria-label="Views">
+        <a href="#/class" data-view="class">Class</a>
+        <a href="#/student" data-view="student">Student</a>
+        <a href="#/progression" data-view="progression">Learning progression</a>
+        <a href="#/evidence" data-view="evidence">How levels are set</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1"></main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div>
+        <p><b>Students and scores are hypothetical.</b> Item difficulties and level thresholds come from the item bank of a vertically scaled interim assessment. Exemplar items are illustrative.</p>
+        <p class="credits">Learning progression: Wellberg, Briggs &amp; Student (2023). Framework and pilot study: Briggs et al. (2025), <a href="https://doi.org/10.1080/10627197.2025.2503288">Educational Assessment</a>.</p>
+      </div>
+      <div>
+        <p><a href="https://cadre-cu.github.io/crg.html">Content-Referenced Growth at CADRE</a></p>
+        <p class="credits">Center for Assessment, Design, Research and Evaluation, School of Education, University of Colorado Boulder.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scrim" class="scrim"></div>
+  <aside id="drawer" class="drawer" aria-hidden="true" aria-labelledby="drawer-title" inert></aside>
+  <div id="tooltip" class="tooltip" role="tooltip"></div>
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged item"></div>
+  <div id="tour" class="tour"></div>
+
+  <script src="assets/data/crg-data.js?v=10"></script>
+  <script src="assets/js/core.js?v=10"></script>
+  <script src="assets/js/charts.js?v=10"></script>
+  <script src="assets/js/views.js?v=10"></script>
+  <script src="assets/js/drawer.js?v=10"></script>
+  <script src="assets/js/tour.js?v=10"></script>
+  <script src="assets/js/app.js?v=10"></script>
+</body>
+</html>
